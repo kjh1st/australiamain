@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB - CSS</title>
+  <meta charset="utf-8">
+  <style>
+    body{
+      margin:0;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left:33px;
+    }
+    #grid #article{
+      padding-left:25px;
+    }
+  </style>
+</head>
+<body>
+  <h1><a href="main.html">호주유학</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="buy.html">필요한거</a></li>
+      <li><a href="want.html">가서 하고 싶은거</a></li>
+      <li><a href="before.html">가기전 할거</a></li>
+    </ol>
+    <div id="article">
+        <p> 
+        <h2>자동차 운전면허</h2>
+        <img src="car.jpeg">
+        <h2>라떼 아트</h2>
+        <img src="latte.jpeg">
+      </div>
+  </div>
+  </body>
+  </html>
+  </html>
