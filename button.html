@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB - CSS</title>
+  <meta charset="utf-8">
+  <style>
+    body{
+      margin:0;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left:33px;
+    }
+    #grid #article{
+      padding-left:25px;
+    }
+  </style>
+</head>
+<body>
+  <h1><a href="index.html">호주유학</a></h1>
+  <div id="grid">
+    <ol>
+      <input type="button" value="night" onclick="
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.backgroundColor='white';
+      ">
+      <input type="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.backgroundColor='black';
+      ">
+      <li><a href="buy.html">필요한거</a></li>
+      <li><a href="want.html">가서 하고 싶은거</a></li>
+      <li><a href="before.html">가기전 할거</a></li>
+      <li><a href="button.html">버튼 경고창</a></li>
+      <li><a href="youtube.html">유튜브</a></li>
+    </ol>
+    <div id="article">
+        <p> 
+        <input type="button" value="button" onclick="alert('hello~this is jeahyun~')">
+        </p>
+      </div>
+  </div>
+  </body>
+  </html>
